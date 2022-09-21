@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Style/style.css">
+    <script type="text/javascript" src="./javaScrip/script.js"></script>
+    <title>Decodificador
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logo-img" src="./img/logo.png"> 
+            <h1 class="titulo-logo">Codificador de mensagens</h1>    
+        </div>
+        <div class="esquerda">
+            <input class="textoinput" id="textoEsquerda" type="text" placeholder="Digite o seu texto.">
+        </div>
+        <div class="direita">
+            <img src="./img/boneco.png" id="bonecoimg">
+            <h1 id="texto1">
+                Nenhuma mensagem encontrada
+            </h1>
+            <textarea id="texto2" name="" cols="30" rows="9">Digite um texto que você deseja criptografar ou descriptografar</textarea>
+            <button id="copiar" type="button" name="button" onclick="copiarTexto()">copiar</button>
+        </div>
+        <div class="botao-esquerdo">
+            <p>Apenas letras minúsculas e sem acento</p>
+            <button type="button" id="btn-encriptar" class="encripitar" name="button" onclick="encriptar()">Encripitar</button>
+            <button type="button" class="desencripitar" name="button" onclick="desencriptar()">Desencripitar</button>
+        </div>
+    </div>
+</body>
+</html>
